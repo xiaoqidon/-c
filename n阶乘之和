@@ -1,0 +1,28 @@
+int arr( int j)
+{
+	int i = 0;
+	int n = 0;
+	int sum = 0;
+	while (j)
+	{
+		int x = 1;
+		for (n = j; n >1; n--)
+		{
+			x *= n;
+		}
+		sum += x;
+		j--;
+	}
+	return sum;
+}
+
+int main()
+{
+	
+	int j = 0;
+	scanf("%d", &j);
+
+	int ret=arr( j);
+	printf("%d", ret);
+	return 0;
+}
